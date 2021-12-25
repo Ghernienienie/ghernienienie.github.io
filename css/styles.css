@@ -1,0 +1,545 @@
+@charset "UTF-8";
+
+/*=============================
+   Name: Ghernie (2128681)   
+   Class: DISM/FT/1A/05      
+   Module: ST0501            
+   CA2                       
+   File: styles.css          
+   Date Created: 30 July 2021 
+   Date Submitted: 6 Aug 2021
+=============================*/
+
+/* ==Media Queries==
+
+Extra small (xs) devices [ <576px ] E.g. Mobile Phones
+
+Small (xs) devices [min-width: 576px] E.g. Small tablets, Landscape Phones
+
+Medium (md) devices [min-width: 768px] E.g. Tablets
+
+Large (lg) devices [min-width: 992px] E.g. Laptops
+
+Extra Large (xl) devices [min-width: 1200px] E.g. Desktops, Large monitors
+*/
+
+/* Montserrat - Font - Google Fonts */
+@font-face {
+  font-family: "Montserrat", "Calibri", sans-serif;
+  src: url(../font/Montserrat/Montserrat-Black.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-BlackItalic.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-Bold.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-BoldItalic.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-Light.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-LightItalic.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-Medium.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-MediumItalic.ttf) format("ttf"),
+    url(../font/Montserrat/Montserrat-Regular.ttf) format("ttf");
+}
+
+/* [ Body ] */
+
+body {
+  font-family: "Montserrat", "Calibri", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 500px;
+}
+
+::selection {
+  color: white;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* [ Background Image and Font ] */
+
+.background-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Font Awesome Icon Styles */
+
+.current .fa-leaf {
+  color: #597743;
+}
+
+.current .fa-calendar-alt {
+  color: rgba(79, 139, 11, 0.712);
+}
+
+.current .fa-smile-beam {
+  color: rgba(45, 78, 6, 0.712);
+}
+
+.course_career .fa-user-secret {
+  opacity: 0.95;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255),
+    3px 3px 20px rgba(145, 20, 20, 0.733);
+}
+
+/*           Index Styles           */
+
+.index {
+  background-image: url(../images/me-background.jpg);
+  background-position: center center;
+}
+
+.index .about-info {
+  background: linear-gradient(
+    90deg,
+    rgba(98, 52, 2, 0.91) 0%,
+    rgba(185, 112, 33, 0.83) 46%,
+    rgba(136, 77, 12, 0.65) 94%
+  );
+  padding: 2rem;
+  height: 130%;
+  min-width: 500px;
+  min-height: 350px;
+}
+
+.index .media a:hover {
+  text-decoration: none;
+}
+
+.index .box-index {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Index Typography */
+
+.index .about-info div p {
+  color: #f1e2de;
+}
+
+.index .character-text {
+  color: #f8f8ff;
+}
+
+.index h2 {
+  color: #443d34;
+}
+
+.index h5 {
+  font-size: 2rem;
+}
+
+.index .about-info .lead {
+  font-size: 2.2rem;
+}
+
+.index .about-info a {
+  font-size: 1.2rem;
+}
+
+.index b {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #f5e4d1;
+}
+
+.index blockquote p#quote {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #f0e5e5de;
+}
+.index blockquote p#quote::before,
+.index blockquote p#quote::after {
+  content: '"';
+}
+
+.index blockquote .blockquote-footer {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Index Images */
+
+.about-info img {
+  width: 250px;
+  filter: brightness(1.3);
+  margin-left: 1rem;
+}
+
+.index .bg-interest {
+  background-image: url(../images/interest-bg.jpg);
+  background-position: center right;
+}
+
+.index .bg-personality {
+  background-image: url(../images/personality-bg.jpg);
+  background-position: center bottom;
+  background-size: 100%;
+}
+
+.index .bg-character {
+  background-color: #fff8f0d3;
+}
+
+.index .bg-values {
+  background-image: url(../images/values-bg.jpg);
+  background-position: center 75%;
+  background-size: 100%;
+}
+
+/*         Past Styles          */
+
+.past {
+  background-image: url(../images/past-background.jpg);
+  background-position: left 10%;
+}
+
+.past .scroll-text {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.past .scroll-box {
+  position: relative;
+  height: 470px;
+  overflow: auto;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.past .nav-link {
+  color: whitesmoke;
+}
+
+.past .experience-navbar {
+  background-color: #222124d3;
+}
+
+.past .experience-box {
+  background-color: #ffffffef;
+}
+
+.past ul li {
+  margin-top: 1rem;
+}
+
+/*         Current Styles       */
+
+.current {
+  background-image: url(../images/current-background.jpg);
+  background-position: center top;
+}
+
+.current .jumbotron,
+.current table {
+  box-shadow: inset -5px -2px 30px 0px rgba(0, 0, 0, 0.8),
+    5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+}
+
+.current #image-map-3 {
+  width: 101%;
+}
+
+/* Table Styles */
+
+.current table th,
+.current table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.current table .table-thursday {
+  height: 100px;
+}
+
+.current table caption {
+  caption-side: top;
+  text-align: left;
+}
+
+.current .figure-caption {
+  background-color: #272525bd;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 0.5rem;
+}
+
+.current .figure-caption > .lead {
+  margin-bottom: 0;
+}
+
+/*           Course and Career Styles       */
+
+.course_career {
+  background-color: #1e2629;
+  background-image: url(../images/course_background.jpg);
+  height: 100vh;
+  background-position: center top;
+}
+
+.course_career .intro {
+  margin: 1em;
+}
+
+/* Clock */
+
+.course_career div#clock {
+  width: 380px;
+}
+
+.course_career div#date,
+.course_career div#time {
+  font-size: 1.8em;
+  color: #ffffffda;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255), 3px 3px 10px white;
+  text-align: left;
+}
+
+.course_career div#clock p {
+  color: #ffffff;
+  text-align: left;
+  margin: 15px auto;
+}
+
+/* Course  Typography */
+
+.course_career .course h1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(228, 251, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 251, 255, 0.87) 0%,
+    rgba(237, 252, 255, 1) 38%,
+    rgba(170, 175, 176, 1) 81%,
+    rgba(133, 133, 133, 0.6) 100%
+  );
+  font-size: 8vw;
+  font-weight: 500;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  text-align: center;
+}
+
+.course_career .course .intro p {
+  background-color: #1e2629c4;
+  color: white;
+  text-align: justify;
+  font-weight: 300;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.course_career .course .intro p:first-of-type {
+  margin-top: 1em;
+}
+
+.course_career .course .intro blockquote {
+  box-shadow: 6px 8px rgba(94, 122, 104, 0.795);
+  border: 1px solid rgba(94, 122, 104, 0.795);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.course_career .course blockquote p:first-of-type:before {
+  content: open-quote;
+  font-size: 1.5rem;
+}
+
+.course_career .course blockquote p:nth-child(2)::after {
+  content: close-quote;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .course_career .course .intro h1 {
+    font-size: 3.9vw;
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .course_career .course .intro p {
+    font-size: 1rem;
+  }
+}
+
+/* Career */
+
+.course_career .career .card {
+  min-height: 850px;
+}
+
+/* DISM Logo Styles */
+
+#DISM_logo {
+  filter: drop-shadow(2px 2px 14px #ffad4f6b);
+  width: 4rem;
+  display: inline-block;
+}
+
+/*        Feedback Styles       */
+
+.feedback {
+  background-image: url(../images/feedback_background.jpg);
+  background-position: bottom left;
+}
+
+.feedback legend {
+  background-color: #f0f0f0;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.feedback fieldset {
+  background-color: #f0f0f0e7;
+  padding: 1rem;
+  min-height: 600px;
+}
+
+/*      References Styles       */
+
+.references {
+  background: #e0eafc;
+  background: linear-gradient(to right, #fdfeff, #e0eafc9f);
+  color: #262626c4;
+}
+
+/*  [ Navigation ]  */
+
+.navbar {
+  padding: 2rem;
+  opacity: 1;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+}
+.navbar-brand {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.past .navbar-toggler-icon {
+  border-radius: 5px;
+}
+
+.past .navbar-brand {
+  color: black;
+}
+
+.past > nav {
+  background-color: rgba(255, 255, 255, 0.788);
+}
+
+@media (min-width: 768px) {
+  .navbar li {
+    padding-right: 20px;
+  }
+
+  .past > nav {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .past > nav .nav-link {
+    color: black;
+  }
+
+  .past > nav .navbar-brand {
+    color: white;
+  }
+}
+
+/* [ Scroll Bar Styles ] */
+
+::-webkit-scrollbar-track {
+  background-color: #262626;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #a6a6a6;
+}
+
+/*  [ Footer Styles ]  */
+
+footer {
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  color: #dee9ede8;
+  width: 100%;
+  font-weight: 300;
+}
+
+footer hr {
+  border: 0;
+  border-top: 1px solid rgba(204, 204, 204, 0.589);
+}
+
+footer a:first-of-type,
+footer a:first-of-type > i {
+  text-decoration: underline;
+}
+
+footer .custom-border-right {
+  border: 0px solid transparent;
+}
+
+@media (min-width: 768px) {
+  footer .custom-border-right {
+    border-right: 1.5px solid rgba(245, 245, 245, 0.253);
+  }
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #3869b9de;
+}
+
+footer aside a:hover {
+  color: #009ec63a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.past footer {
+  background: rgb(52, 41, 39);
+  background: linear-gradient(
+    117deg,
+    rgba(52, 41, 39, 0.63) 0%,
+    rgba(205, 199, 90, 0.64) 75%,
+    rgba(212, 171, 76, 0.83) 100%
+  );
+}
+
+.course_career footer {
+  background: linear-gradient(
+    90deg,
+    rgba(122, 141, 122, 1) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+
+.current footer {
+  background: rgb(120, 120, 118);
+  background: radial-gradient(
+    circle,
+    rgba(120, 120, 118, 0.78) 0%,
+    rgba(57, 70, 46, 1) 47%,
+    rgba(27, 47, 15, 0.79) 100%
+  );
+}
+
+.feedback footer {
+  color: #3d3d3de8;
+}

@@ -1,0 +1,61 @@
+References
+
+index.html Background:
+
+(Harrison, 2020)
+Harrison, J., 2020. Black flat screen, computer. [image] Available at: <https://unsplash.com/photos/UVMPVIRCF5w> [Accessed 31 July 2021].
+
+
+
+    index-interests background:
+    
+    (Masalar, 2017)
+    Masalar, M., 2017. Music Sheet. [image] Available at: <https://unsplash.com/photos/rPOmLGwai2w> [Accessed 1 August 2021].
+
+    index-personality background:
+
+    (Thought Catalog, 2017)
+    Thought Catalog, 2017. Organised. [image] Available at: <https://unsplash.com/photos/505eectW54k> [Accessed 1 August 2021].
+
+    index-values background:
+
+    (Reis, 2020)
+    Reis, R., 2020. Traveller. [image] Available at: <https://unsplash.com/photos/y0VUxw3Q6jI> [Accessed 1 August 2021].
+
+past.html Background:
+
+(Woroniecki, 2020)
+Woroniecki, J., 2020. Asphalt Highway. [image] Available at: <https://unsplash.com/photos/EiFis1ujQDE> [Accessed 1 August 2021].
+course_career.html Background
+
+current.html Background:
+
+(Tyson, 2018)
+Tyson, J., 2018. School Hopscotch. [image] Available at: <https://unsplash.com/photos/r9T0LZv8xWQ> [Accessed 1 August 2021].
+
+course_career.html Background
+
+(Spiske, 2017)
+Spiske, M., 2017. Data on Computer Screen. [image] Available at: <https://unsplash.com/photos/FXFz-sW0uwo> [Accessed 31 July 2021].
+
+    career-webDev:
+
+    (HalGatewood.com, 2018)
+    HalGatewood.com, 2018. Website Design. [image] Available at: <https://unsplash.com/photos/tZc3vjPCk-Q> [Accessed 1 August 2021].
+
+    career-sysAdmin:
+
+    (Sigmund, 2021)
+    Sigmund, 2021. Cable. [image] Available at: <https://unsplash.com/photos/EJe6LqEjHpA> [Accessed 2 August 2021].
+
+    career-infoSec:
+
+    (Bughdaryan, 2021)
+    Bughdaryan, S., 2021. Keyboard, Lock Key. [image] Available at: <https://unsplash.com/photos/8admGA18lBs> [Accessed 1 August 2021].
+
+feedback.html Background
+
+(Redd, 2016)
+Redd, B., 2016. Papers. [image] Available at: <https://unsplash.com/photos/aJTiW00qqtI> [Accessed 1 August 2021].
+
+

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*=============================
+   Name: Ghernie (2128681)   
+   Class: DISM/FT/1A/05      
+   Module: ST0501            
+   CA2                       
+   File: image_transformation.css          
+   Date Created: 1 Aug 2021 
+   Date Submitted: 6 Aug 2021
+=============================*/
+
+.current img {
+  box-shadow: 5px 0px 35px 10px rgba(52, 52, 52, 0.25);
+  border-radius: 4px;
+}
+
+.current img#friends-red-bridge {
+  transform: skewY(2deg) rotateZ(-4deg);
+  border: 10px solid;
+  border-image: url(../images/border-image.png) 280 300 stretch;
+}
+
+.current img#me-red-bridge {
+  transform: translate(0px, 0px) skewY(4deg) skewX(-1deg);
+  border: 30px solid;
+  width: 400px;
+  border-image: url(../images/border-image.png) 280 300 stretch;
+}
+
+.current img#friends-lift {
+  transform: translate(0px, 0px) rotate(-3deg);
+  border: 10px solid;
+  border-image: url(../images/border-image.png) 280 300 stretch;
+}
+
+@media (min-width: 768px) {
+  .current #friends-red-bridge-shadow {
+    position: absolute;
+    width: inherit;
+    height: 100%;
+    border: 2px solid whitesmoke;
+    transform: translateX(30px);
+  }
+
+  .current img#friends-red-bridge {
+    transform: translate(50px, -20px) skewY(2deg) rotateZ(-4deg);
+    border: 10px solid;
+    border-image: url(../images/border-image.png) 280 300 stretch;
+  }
+
+  .current #me-red-bridge-shadow {
+    position: absolute;
+    width: inherit;
+    height: 100%;
+    border: 2px solid whitesmoke;
+    transform: translate(40px, 50px);
+  }
+
+  .current img#me-red-bridge {
+    transform: translate(0px, 50px) rotate(1deg) skewY(7deg) skewX(-3deg);
+    border: 30px solid;
+    border-image: url(../images/border-image.png) 280 300 stretch;
+  }
+
+  .current #friends-lift-shadow {
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    border: 2px solid whitesmoke;
+    transform: translate(80px, 50px);
+    z-index: 1;
+  }
+
+  .current #friends-lift-shadow-2 {
+    position: absolute;
+    width: inherit;
+    height: 100%;
+    border: 2px solid whitesmoke;
+    transform: translate(50px, 50px) scale(0.5);
+    z-index: -1;
+  }
+}
+/* Current - Image Grid */
+
+@media (min-width: 768px) {
+  .current .image-grid {
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-areas:
+      "imageNo1 imageNo2"
+      "imageNo3 imageNo2";
+  }
+  .current .imgNo1 {
+    grid-area: imageNo1;
+    width: 350px;
+  }
+  .current .imgNo2 {
+    grid-area: imageNo2;
+    justify-self: center;
+    width: 300px;
+  }
+  .current .imgNo3 {
+    grid-area: imageNo3;
+    width: 300px;
+    transform: translate(-40px, 0px);
+  }
+  .current img#friends-lift {
+    transform: rotate(-3deg) translate(120px, 50px) scale(0.8);
+    border: 10px solid;
+    border-image: url(../images/border-image.png) 280 300 stretch;
+  }
+}
+
+@media (min-width: 1068px) {
+  .current .image-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-areas:
+      "imageNo1 imageNo2"
+      "imageNo3 imageNo2";
+  }
+  .current .imgNo1 {
+    grid-area: imageNo1;
+
+    width: 500px;
+  }
+  .current .imgNo2 {
+    grid-area: imageNo2;
+    justify-self: center;
+    width: 400px;
+  }
+  .current .imgNo3 {
+    grid-area: imageNo3;
+    width: 400px;
+  }
+  .current img#friends-lift {
+    transform: rotate(-3deg) translate(160px, 50px) scale(0.8);
+    border: 10px solid;
+    border-image: url(../images/border-image.png) 280 300 stretch;
+  }
+}
